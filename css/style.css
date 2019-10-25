@@ -59,19 +59,29 @@ p {
   text-transform: uppercase;
 }
 @media screen and (min-width: 600px) {
+  .container {
+    padding-top: 10em;
+  }
   .sideheader {
     display: flex;
+    flex-direction: column;
   }
   .logo {
     display: inherit;
     max-width: 100%;
   }
+  #arts1 {
+    width: 100vw;
+    height: auto;
+  }
   img {
     height: auto;
     max-width: 40%;
   }
-  .container {
-    padding-top: 10em;
+  #search-engine {
+    display: flex;
+    justify-content: center;
+    margin: auto;
   }
   .text-bottom {
     padding-top: 12rem;
@@ -80,14 +90,20 @@ p {
     .container {
       display: inline-flex;
     }
-    .search-form-inner {
+    /* .search-form-inner {
       display: flex;
-    }
+    } */
 
     #section {
       font-size: 1.1rem;
     }
 
+    #arts1 {
+      display: flex;
+      width: 100vw;
+      height: auto;
+      /* display: contents; */
+    }
     img {
       max-width: 100%;
     }
