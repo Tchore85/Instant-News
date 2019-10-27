@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-  let home;
   // $("#section").on("click", function(event) {
   //   event.preventDefault();
 
   // });
   $("form").on("change", "#sections", function(event) {
-    home = $(this).val();
+    let home;
+    home = $(this)
+      .val()
+      .toLowerCase();
     // console.log("heloloooll");
     $.ajax({
       method: "GET",
@@ -19,10 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
       $("#arts1").empty();
       $.each(data.results, function(key, value) {
         $("#arts1").append(
-          `<div style="background-image:url(${value.multimedia[4].url})";>
-          <p>${value.abstract}</p></div>`
+          `<div class="article" style="background-image:url(${value.multimedia[4].url})">
+          <div class="story"><p>${value.abstract}</p></div></div>`
         );
       });
+
+      //        <p class="abstr" style="abstrac:(${value.abstract})"></p></div>`
       // .fail(function() {
       //   $(".user-name").append("Sorry there was an error.");
     });
