@@ -18,11 +18,17 @@ document.addEventListener("DOMContentLoaded", function() {
       dataType: "json"
     }).done(function(data) {
       console.log(data.results);
-      $("#arts1").empty();
+      $("#main-content").empty();
       $.each(data.results, function(key, value) {
-        $("#arts1").append(
-          `<div class="article" style="background-image:url(${value.multimedia[4].url})">
-          <div class="story"><p>${value.abstract}</p></div></div>`
+        // if
+        // (value.multimedia[4].url==undefined || value.multimedia[4].url==null){
+        //   continue;
+        // }
+        $("#main-content").append(
+          `<article class="article" style="background-image:url(${value.multimedia[4].url})">
+          <div class="story">
+          <a href="${value.short_url}" target=_blank>
+          <p>${value.abstract}</p></a></div></article>`
         );
       });
 
