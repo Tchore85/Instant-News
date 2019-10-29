@@ -181,6 +181,13 @@ a {
           justify-content: center;
   margin: auto; }
 
+.choose {
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+
+#sections {
+  font-size: 16px; }
+
 #main-content {
   display: -webkit-box;
   display: flex;
@@ -278,7 +285,13 @@ a {
   /* .search-form-inner {
       display: flex;
     }  */
-  #section {
+  .sideheader {
+    padding-top: 5rem;
+    padding-left: 1rem; }
+  .logo {
+    padding: 15vh;
+    padding-left: 1rem; }
+  #sections {
     font-size: 1.1rem; }
   #main-content {
     display: -webkit-box;
