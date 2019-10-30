@@ -75,23 +75,22 @@ a {
   flex: 1 0 100%;
   height: 22rem;
   background-repeat: no-repeat;
-  // flex-wrap: wrap;
   box-sizing: border-box;
-  // border: solid 2px white;
   background-position: center;
   background-size: cover;
-  // justify-content: center;
-  // align-items: center;
   position: relative;
 }
 
 .story {
   position: absolute;
   bottom: 0;
-  // text-align: auto;
   line-height: 1.5rem;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
+  // transition: 1s;
+  // transform: translateY(100%);
+  // margin: 0;
+  padding: 10px;
 }
 
 .site-footer {
@@ -154,6 +153,13 @@ a {
     justify-content: center;
     align-items: center;
     // position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover {
+      .story {
+        transform: translateY(0);
+      }
+    }
   }
   .story {
     position: absolute;
@@ -162,6 +168,10 @@ a {
     line-height: 1.5rem;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
+    transition: 1s;
+    transform: translateY(100%);
+    margin: 0;
+    padding: 20px;
   }
   img {
     height: auto;
@@ -198,7 +208,7 @@ a {
 
     #main-content {
       display: flex;
-      width: 100vw;
+      width: 99vw;
       height: auto;
       /* display: contents;*/
     }

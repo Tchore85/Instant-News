@@ -17,9 +17,20 @@ document.addEventListener("DOMContentLoaded", function() {
         ".json?api-key=JqxRLlt3a0VlwM6Ag5iAy5VAYiRgvIJg",
       dataType: "json"
     }).done(function(data) {
-      console.log(data.results);
+      // console.log(data.results);
+
       $("#main-content").empty();
-      $.each(data.results, function(key, value) {
+      let filteredResults = data.results
+        .filter(function(article) {
+          return (
+            article.multimedia[4] !== undefined &&
+            article.subsection !== "Art & Design"
+          );
+        })
+        .slice(0, 12);
+      console.log(filteredResults);
+
+      $.each(filteredResults, function(key, value) {
         // if
         // (value.multimedia[4].url==undefined || value.multimedia[4].url==null){
         //   continue;
@@ -30,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
           <a href="${value.short_url}" target=_blank>
           <p>${value.abstract}</p></a></div></article>`
         );
+        // $("#main-content").tagsinput({
+        //   maxTags: 12
+        // });
       });
 
       //        <p class="abstr" style="abstrac:(${value.abstract})"></p></div>`
