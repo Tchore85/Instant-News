@@ -288,9 +288,16 @@ a {
             justify-content: center;
     -webkit-box-align: center;
             align-items: center;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     overflow: hidden; }
+    .article:hover {
+      -webkit-filter: grayscale(0);
+              filter: grayscale(0);
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
     .article:hover .story {
       -webkit-transform: translateY(0);
               transform: translateY(0); }

@@ -178,8 +178,16 @@ a {
     justify-content: center;
     align-items: center;
     // position: relative;
+    filter: grayscale(100%);
+    // transition: all 0.3s ease-in;
     transition: 0.5s;
     overflow: hidden;
+    &:hover {
+      // .article {
+      filter: grayscale(0);
+      transform: translateY(0);
+      // }
+    }
     &:hover {
       .story {
         transform: translateY(0);
