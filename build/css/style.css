@@ -199,11 +199,6 @@ a {
 #sections {
   font-size: 16px; }
 
-#main-content {
-  display: -webkit-box;
-  display: flex;
-  flex-flow: wrap; }
-
 #ajax-loader {
   display: none;
   position: absolute;
@@ -213,6 +208,11 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 10; }
+
+#main-content {
+  display: -webkit-box;
+  display: flex;
+  flex-flow: wrap; }
 
 .article {
   -webkit-box-flex: 1;
@@ -246,15 +246,11 @@ a {
 .text-bottom span {
   text-transform: uppercase; }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .container {
-    display: -webkit-box;
-    display: flex;
     flex-wrap: wrap;
     align-content: center; }
   .sideheader {
-    display: -webkit-box;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column; }
@@ -263,14 +259,7 @@ a {
     max-width: 100%;
     padding: 15vh; }
   .search-engine {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    margin: auto;
     margin-left: 5rem; }
-  .choose {
-    padding-bottom: 1rem; }
   #sections {
     font-size: 20px; }
   #main-content {
@@ -302,12 +291,7 @@ a {
       -webkit-transform: translateY(0);
               transform: translateY(0); }
   .story {
-    position: absolute;
-    bottom: 0;
     text-align: auto;
-    line-height: 1.5rem;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
     -webkit-transition: 1s;
     transition: 1s;
     -webkit-transform: translateY(100%);
@@ -322,12 +306,9 @@ a {
   .text-bottom2 {
     margin-top: 5rem; } }
 
-@media screen and (min-width: 600px) and (min-width: 1000px) {
+@media (min-width: 600px) and (min-width: 1000px) {
   .container {
     display: table-row; }
-  /* .search-form-inner {
-      display: flex;
-    }  */
   .sideheader {
     padding-top: 2rem;
     padding-left: 1rem; }
@@ -337,13 +318,10 @@ a {
   #sections {
     font-size: 1.1rem; }
   #main-content {
-    display: -webkit-box;
-    display: flex;
     width: 99vw;
-    height: auto;
-    /* display: contents;*/ }
+    height: auto; }
   #ajax-loader {
-    top: 40%; }
+    top: 30%; }
   .article {
     -webkit-box-flex: 1;
             flex: 1 0 25%;

@@ -77,12 +77,7 @@ a {
   font-size: 16px;
 }
 
-#main-content {
-  display: flex;
-  flex-flow: wrap;
-}
 #ajax-loader {
-  // background-image: url(../ajax-loader.gif);
   display: none;
   position: absolute;
   width: 3rem;
@@ -90,6 +85,10 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+#main-content {
+  display: flex;
+  flex-flow: wrap;
 }
 
 .article {
@@ -108,9 +107,6 @@ a {
   line-height: 1.5rem;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  // transition: 1s;
-  // transform: translateY(100%);
-  // margin: 0;
   padding: 10px;
 }
 
@@ -128,15 +124,12 @@ a {
 .text-bottom span {
   text-transform: uppercase;
 }
-@media screen and (min-width: 600px) {
+@include tablet {
   .container {
-    // padding-top: 10em;
-    display: flex;
     flex-wrap: wrap;
     align-content: center;
   }
   .sideheader {
-    display: flex;
     flex-direction: column;
   }
   .logo {
@@ -145,13 +138,7 @@ a {
     padding: 15vh;
   }
   .search-engine {
-    display: flex;
-    justify-content: center;
-    margin: auto;
     margin-left: 5rem;
-  }
-  .choose {
-    padding-bottom: 1rem;
   }
   #sections {
     font-size: 20px;
@@ -169,24 +156,15 @@ a {
     flex: 1 0 50%;
     height: 22rem;
     max-width: 50%;
-    // background-repeat: no-repeat;
     flex-wrap: wrap;
-    // box-sizing: border-box;
-    // border: solid 2px white;
-    // background-position: center;
-    // background-size: cover;
     justify-content: center;
     align-items: center;
-    // position: relative;
     filter: grayscale(100%);
-    // transition: all 0.3s ease-in;
     transition: 0.5s;
     overflow: hidden;
     &:hover {
-      // .article {
       filter: grayscale(0);
       transform: translateY(0);
-      // }
     }
     &:hover {
       .story {
@@ -195,12 +173,7 @@ a {
     }
   }
   .story {
-    position: absolute;
-    bottom: 0;
     text-align: auto;
-    line-height: 1.5rem;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
     transition: 1s;
     transform: translateY(100%);
     margin: 0;
@@ -217,13 +190,10 @@ a {
   .text-bottom2 {
     margin-top: 5rem;
   }
-  @media screen and (min-width: 1000px) {
+  @include desktop {
     .container {
       display: table-row;
     }
-    /* .search-form-inner {
-      display: flex;
-    }  */
 
     .sideheader {
       padding-top: 2rem;
@@ -234,35 +204,29 @@ a {
       padding: 10vh;
       padding-left: 1rem;
     }
-
     #sections {
       font-size: 1.1rem;
     }
 
     #main-content {
-      display: flex;
       width: 99vw;
       height: auto;
-      /* display: contents;*/
     }
 
     #ajax-loader {
-      top: 40%;
+      top: 30%;
     }
 
     .article {
       flex: 1 0 25%;
       height: 420px;
-      // width: 100%;
       max-width: 25%;
     }
     img {
       max-width: 100%;
     }
-
     .text-bottom {
       display: inline-flex;
-      // padding-top: 17rem;
       padding-left: 3rem;
     }
 

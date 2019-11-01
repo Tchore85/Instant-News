@@ -1,9 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // $("#section").on("click", function(event) {
-  //   event.preventDefault();
-
-  // });
-
   $("form").on("change", "#sections", function(event) {
     let home;
     home = $(this)
@@ -52,14 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     $(".logo img").css({
       height: "9rem",
-      transition: "1s ease-in-out"
+      transition: "3s ease-in-out"
     });
   });
 });
-
-// const hideSpinner = document.getElementById("sections");
-//       hideSpinner.addEventListener("change", display);
-//       function display() {
-//         console.log("display");
-//         if (hideSpinner === filteredResults) {
-//           conslole.log();
