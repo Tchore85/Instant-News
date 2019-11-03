@@ -142,7 +142,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   background-color: black;
-  color: white; }
+  color: white;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 3.375em; }
