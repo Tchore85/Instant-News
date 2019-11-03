@@ -13,7 +13,6 @@ body {
   font-size: 16px;
   background-color: black;
   color: white;
-  /* max-width: 1240px; */
 }
 
 h1 {
@@ -91,9 +90,6 @@ p {
     .container {
       display: inline-flex;
     }
-    /* .search-form-inner {
-      display: flex;
-    }  */
 
     #section {
       font-size: 1.1rem;
@@ -103,7 +99,6 @@ p {
       display: flex;
       width: 100vw;
       height: auto;
-      /* display: contents;*/
     }
     img {
       max-width: 100%;

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     home = $(this)
       .val()
       .toLowerCase();
-    // console.log("heloloooll");
+
     $("#ajax-loader").show();
     console.log($("#ajax-loader"));
 
@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
       dataType: "json"
     })
       .done(function(data) {
-        // console.log(data.results);
-
         $("#main-content").empty();
         let filteredResults = data.results
           .filter(function(article) {
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .always(function() {
         $("#ajax-loader").hide();
-        console.log("always runs");
       });
     $(".logo img").css({
       height: "9rem",

@@ -10,9 +10,3 @@ Author: Michal Prokop
 - Working with the Ajax and Jason Files
 - Manipulating with API
 - Java Vanilla and Jquery
-
-### 3
-
-- one
-- two
-- [three](https://google.com)
