@@ -1,3 +1,10 @@
+.instanews-hudge-container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -114,12 +121,13 @@ a {
 .site-footer {
   color: $site-footer-color;
   font-size: 0.9rem;
+  padding: 2rem;
 }
 
 .text-bottom {
   display: flex;
   justify-content: center;
-  padding-top: 10em;
+  // padding-top: 10em; WAS REMOVED NOW
 }
 
 .text-bottom span {
@@ -186,7 +194,7 @@ a {
   }
 
   .text-bottom {
-    padding-top: 12rem;
+    // padding-top: 12rem; WAS REMOVED NOW
   }
   .text-bottom2 {
     margin-top: 5rem;

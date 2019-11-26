@@ -1,11 +1,15 @@
 {
-  "name": "gulp-started",
+  "name": "instanews",
   "version": "1.0.0",
-  "description": "My first gulp project",
+  "description": "Instanews working with API aJax and Jason file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "hello": "echo 'Hello'"
+    "hello": "echo 'Hello'",
+    "dev": "gulp",
+    "build": "gulp scripts && gulp sass",
+    "clean-install": "rm -rf node_modules/ && npm i",
+    "path": "pwd"
   },
   "keywords": [
     "gulp",
